@@ -1,20 +1,23 @@
 import React from 'react'
 import { Button } from '../../globalStyles'
-import { FaFacebook,FaInstagram,FaTwitter,FaYoutube,FaLinkedin } from 'react-icons/fa'
+import { CiMail,CiPhone } from "react-icons/ci";
+// import { FaInstagram,FaTwitter,FaYoutube,FaLinkedin,} from 'react-icons/fa'
 import {FooterContainer,FooterSubscription,FooterSubHeading,
     FooterSubText,Form,FormInput,FooterLinksContainer,
     FooterLinksWrapper,FooterLinksItems,FooterLinkTitle,FooterLink,
-SocialMedia,SocialMediaWrap,SocialLogo,SocialIcons,SocialIconLink,SocialIcon,WebsiteRights} from './Footer.elements'
+SocialMedia,SocialMediaWrap,SocialLogo,SocialIcons,SocialIconLink,FooterSublink,SocialLogosubtext} from './Footer.elements'
+import logo from '../../images/Asset_logo.png'
+
 
 const Footer = () =>{
     return(
         <FooterContainer>
             <FooterSubscription>
                 <FooterSubHeading>
-                    Join exclusive membership to receive the latest news and trends
+                Discover how the ECI impacts lives through faith, community, and service.<br/> Join us on this transformative journey!
                 </FooterSubHeading>
                 <FooterSubText>
-                    You can unsubscribe at any time.
+               Prayer Request
                 </FooterSubText>
                 <Form>
                     <FormInput name="email" type="email" placeholder="Enter Email Address"/>
@@ -23,67 +26,58 @@ const Footer = () =>{
             </FooterSubscription>
             <FooterLinksContainer>
                 <FooterLinksWrapper>
+                <FooterLinksItems>
+                <SocialLogo to="/">
+                        <img src={logo}/>
+                    </SocialLogo>
+                    </FooterLinksItems>
                     <FooterLinksItems>
-                        <FooterLinkTitle>About Us</FooterLinkTitle>
-                        <FooterLink to="/">How it works</FooterLink>
-                        <FooterLink to="/">Careers</FooterLink>
-                        <FooterLink to="/">Investors</FooterLink>
-                        <FooterLink to="/">Terms of service</FooterLink>
+                        <FooterLinkTitle>Explore</FooterLinkTitle>
+                        <FooterLink to="/">About Us</FooterLink>
+                        <FooterLink to="/">Testimonials</FooterLink>
+                        <FooterLink to="/">Events</FooterLink>
+                        <FooterLink to="/">Contact us</FooterLink>
                     </FooterLinksItems>
 
                     <FooterLinksItems>
-                        <FooterLinkTitle>Contact Us</FooterLinkTitle>
-                        <FooterLink to="/">How it works</FooterLink>
-                        <FooterLink to="/">Careers</FooterLink>
-                        <FooterLink to="/">Investors</FooterLink>
-                        <FooterLink to="/">Terms of service</FooterLink>
+                        <FooterLinkTitle>Support</FooterLinkTitle>
+                        <FooterLink to="/">Terms & Conditions</FooterLink>
+                        <FooterLink to="/">Privacy Policy</FooterLink>
+                        <FooterLink to="/">FAQ</FooterLink>
+                    </FooterLinksItems>
+                    <FooterLinksItems>
+                        <FooterLink to="/"><CiMail/>
+                         <FooterSublink> Tamilanban@evangelicalchurchofindia.com</FooterSublink
+                         ></FooterLink>
+                        <FooterLink to="/"><CiPhone />
+                        <FooterSublink>
+                        +91 76395 33348
+                        </FooterSublink></FooterLink>
                     </FooterLinksItems>
                 </FooterLinksWrapper>
-                
-                <FooterLinksWrapper>
-                    <FooterLinksItems>
-                        <FooterLinkTitle>Videos</FooterLinkTitle>
-                        <FooterLink to="/">How it works</FooterLink>
-                        <FooterLink to="/">Careers</FooterLink>
-                        <FooterLink to="/">Investors</FooterLink>
-                        <FooterLink to="/">Terms of service</FooterLink>
-                    </FooterLinksItems>
-
-                    <FooterLinksItems>
-                        <FooterLinkTitle>Social Media</FooterLinkTitle>
-                        <FooterLink to="/">How it works</FooterLink>
-                        <FooterLink to="/">Careers</FooterLink>
-                        <FooterLink to="/">Investors</FooterLink>
-                        <FooterLink to="/">Terms of service</FooterLink>
-                    </FooterLinksItems>
-                </FooterLinksWrapper>
-                
             </FooterLinksContainer>
+
             <SocialMedia>
                 <SocialMediaWrap>
                     <SocialLogo to="/">
-                        <SocialIcon/>
-                        ULTRA
+                       <SocialLogosubtext>
+                        {/* <br/><br/><br/> */}
+                       </SocialLogosubtext>
                     </SocialLogo>
-                    <WebsiteRights>
-                        ULTRA &copy; 2021
-                    </WebsiteRights>
-                    <SocialIcons>
-                        <SocialIconLink to="/" target="_blank" aria-label="Facebook">
-                            <FaFacebook/>
-                        </SocialIconLink>
-                        <SocialIconLink to="/" target="_blank" aria-label="Instagram">
-                            <FaInstagram/>
-                        </SocialIconLink>
-                        <SocialIconLink to="/" target="_blank" aria-label="Youtube">
-                            <FaYoutube/>
-                        </SocialIconLink>
-                        <SocialIconLink to="/" target="_blank" aria-label="Twitter">
-                            <FaTwitter/>
-                        </SocialIconLink>
-                        <SocialIconLink to="/" target="_blank" aria-label="FaLinkedin">
-                            <FaLinkedin/>
-                        </SocialIconLink>
+                     <SocialIcons>
+                        {/* <SocialIconLink to="/" target="_blank" aria-label="Mail">
+                            <CiMail/>
+                            <FooterSublink>
+                            Tamilanban@evangelicalchurchofindia.com
+                            </FooterSublink>
+                        </SocialIconLink> */}
+                        
+                        {/* <SocialIconLink to="/" target="_blank" aria-label="FaLinkedin">
+                        <CiPhone />
+                        <FooterSublink>
+                        +91 76395 33348
+                        </FooterSublink>
+                        </SocialIconLink> */}
                     </SocialIcons>
                 </SocialMediaWrap>
             </SocialMedia>

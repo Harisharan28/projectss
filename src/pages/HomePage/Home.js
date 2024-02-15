@@ -1,6 +1,7 @@
 import React from 'react'
 import { InfoSection } from '../../components';
-import { homeObjOne,homeObjTwo,homeObjThree,homeObjFour } from "./Data"
+import { homeObjOne,homeObjTwo,homeObjThree } from "./Data"
+import Testpage from '../Testpage';
 
 function Home() {
     return ( 
@@ -8,7 +9,7 @@ function Home() {
             <InfoSection {...homeObjOne}/>
             <InfoSection {...homeObjTwo}/>
             <InfoSection {...homeObjThree}/>
-            <InfoSection {...homeObjFour}/>
+            <Testpage/>
         </>
     ) 
 }

@@ -15,7 +15,7 @@ export const InfoRow = styled.div`
     flex-direction:${({ imgStart }) =>(imgStart ? 'row-reverse':'row')};
 `
 export const InfoColumn = styled.div`
-    margin-bottom:15px;
+    margin-bottom:10px;
     padding-right:15px;
     padding-left:15px;
     flex:1;
@@ -54,12 +54,14 @@ export const Heading = styled.h1`
     color:${({LightText})=>(LightText ? '#f7f8fa':'#1c2237')};
 `;
 export const SubTitle = styled.p`
-    max-width: 440px;
+    max-width: 480px;
     margin-bottom:35px;
     font-size:18px;
     line-height:24px;
+    display:flex;
     color:${({LightTextDesc})=>(LightTextDesc ? '#a9b3c1':'#1c2237')};
 `;
+
 export const ImgWrapper = styled.div`
     max-width:555px;
     display:flex;

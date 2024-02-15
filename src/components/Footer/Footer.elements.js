@@ -30,14 +30,29 @@ export const FooterSubHeading = styled.p`
 `;
 
 export const FooterSubText = styled.p`
+    margin-bottom:120px;
+    font-size:25px;
+    font-weight:700;
+`;
+export const FooterSublink = styled.a`
     margin-bottom:24px;
-    font-size:20px;
+    padding:0 10px ;
+    font-size:12px;
+    &:hover{
+        color:#0467fb;
+        transition: 0.3s ease-out;
+    }
+    @media screen and (max-width:820px){
+        flex-direction: column;
+        width: 90%;
+    }
 `;
 
 export const Form = styled.form`
     display:flex;
-    justify-content:center;
-    align-items: center;
+justify-content:space-between;
+align-items: center;
+
 
     @media screen and (max-width:820px){
         flex-direction: column;
@@ -69,6 +84,7 @@ export const FooterLinksContainer = styled.div`
     max-width: 1000px;
     display: flex;
     justify-content: center;
+    padding-top:50px;
 
     @media screen and (max-width:820px){
         padding-top: 32px;
@@ -86,7 +102,7 @@ export const FooterLinksItems = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 16px;
+    margin:0px 18px 0px 8px ;
     text-align: left;
     width: 160px;
     box-sizing:border-box;
@@ -94,7 +110,7 @@ export const FooterLinksItems = styled.div`
 
     @media screen and (max-width:420px){
         margin:0;
-        padding:10px;
+        padding:8px;
         width: 100%;
     }
 `;
@@ -107,6 +123,8 @@ export const FooterLink = styled(Link)`
     color:#fff;
     text-decoration:none;
     margin-bottom: 0.5rem;
+    display:flex;
+    
 
     &:hover{
         color:#0467fb;
@@ -122,10 +140,10 @@ export const SocialMedia = styled.section`
 `;
 
 export const SocialMediaWrap = styled.div`
-    display: flex;
-    justify-content: space-between;
+display: flex;
+    justify-content: center;
     align-items:center;
-    width:90%;
+    width:100%;
     max-width:1000px;
     margin:40px auto 0 auto;
 
@@ -156,14 +174,25 @@ export const WebsiteRights = styled.small`
 
 export const SocialIcons = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
-    width:240px;
+    width:550px;
 `;
 
 export const SocialIconLink = styled.a`
     color:#fff;
     font-size:24px;
+    padding:0 8px;
+    display:flex;
 `;
-
-
+export const logoname =styled.p`
+color:#fff;
+font-size:14px;
+`
+export const SocialLogosubtext = styled.a`
+    color:#fff;
+    font-size:22px;
+    padding:0 18px;
+    display:flex;
+    justify-content: center;
+`;
